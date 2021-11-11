@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
-    <link rel="stylesheet" href="/styles/mobile.css">
+    <link rel="stylesheet" href="/styles/mobile.css" media="(min-width:320px">
     <link rel="stylesheet" href="/styles/desktop.css" media="(min-width:1440px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,13 @@
 
             <img class="brand-logo" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576701/ecommerce-product-page-main/images/logo_bhtoip.svg" alt="brand-logo">
 
-            <a href="#"><p> Collections </p> </a>
-            <a href="#"><p> Men         </p> </a>
-            <a href="#"><p> Women       </p> </a>   
-            <a href="#"><p> About       </p> </a>  
-            <a href="#"><p> Contact     </p> </a>     
+            <div class="list-container">
+                <a href="#"><p> Collections </p> </a>
+                <a href="#"><p> Men         </p> </a>
+                <a href="#"><p> Women       </p> </a>   
+                <a href="#"><p> About       </p> </a>  
+                <a href="#"><p> Contact     </p> </a>     
+            </div>
         </section>
         
 
@@ -32,21 +34,23 @@
             <img class="user-image" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576704/ecommerce-product-page-main/images/image-avatar_dvwjsb.png" alt="user-image">
         </section>
     </nav>
+    
+    
+    <main>
+        <figure class="product">
+            <img class="image-product" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg" alt="product-image">
 
-
-    <figure class="product">
-        <figure>
-            <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576700/ecommerce-product-page-main/images/icon-previous_fdb7mt.svg" alt="next-icon">
-        </figure>
+            <figure>
+                <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576700/ecommerce-product-page-main/images/icon-previous_fdb7mt.svg" alt="next-icon">
+            </figure>
 
         
 
-        <figure>
-            <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/icon-next_dzuzjc.svg" alt="next-icon">
+            <figure>
+                <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/icon-next_dzuzjc.svg" alt="next-icon">
+            </figure>
         </figure>
-    </figure>
 
-    <main>
         <section class="product-info">
             <p>SNEAKER COMPANY</p>
             <h1>Fall Limited Edition Sneakers</h1>

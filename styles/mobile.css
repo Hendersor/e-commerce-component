@@ -19,7 +19,7 @@ html{
 }
 
 .nav-bar1{
-    width: 250px;
+    width: 200px;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -33,7 +33,7 @@ html{
     cursor: pointer;
 }
 
-.nav-bar1 p{
+.nav-bar1 .list-container{
     display: none;
 }
 
@@ -62,21 +62,28 @@ html{
     cursor: pointer;
 }
 
-.product{
+main .product{
     width: 100%;
     min-width: 375px;
     height: 250px;
-    background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg");
+/*     background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     
 }
 
-.product figure{
+main .product img{
+    width: 100%;
+    height: 100%;
+
+}
+
+main .product figure{
     background-color: hsl(223, 64%, 98%);
     opacity: 0.8;    
     height: 30px;
@@ -88,15 +95,28 @@ html{
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
+    position: absolute;
 }
 
-.product figure:nth-child(1){
+main .product .image-product{
+    object-fit: cover;
+}
+
+main .product figure:nth-child(2){
+    right: 90%;
+}
+
+main .product figure:nth-child(3){
     padding-right: 2px;
+    left: 90%;
+    margin-right: 10px;
 }
 
-.product figure img{
+
+main .product figure img{
     width: 9px;
     height: 9px;
+    
 }
 
 
