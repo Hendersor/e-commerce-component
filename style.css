@@ -15,6 +15,7 @@ html{
     height: 55px;
     display: flex;
     justify-content: space-between;
+    min-width: 375px;
 }
 
 .nav-bar1{
@@ -59,6 +60,7 @@ html{
 
 .product{
     width: 100%;
+    min-width: 375px;
     height: 250px;
     background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg");
     background-position: center;
@@ -96,6 +98,7 @@ html{
 
 main .product-info{
     width: 100%;
+    min-width: 375px;
     height: 235px;
     padding-left: 20px;
     padding-right: 20px;
@@ -125,6 +128,7 @@ main .product-info p{
 
 main .price-info{
     width: 100%;
+    min-width: 375px;
     height: 50px;
     display: flex;
     padding-left: 20px;
@@ -162,6 +166,7 @@ main .price-info p:nth-child(3){
 
 main .buy{
     width: 100%;
+    min-width: 375px;
     height: 125px;
     padding-left: 20px;
     padding-right: 20px;
