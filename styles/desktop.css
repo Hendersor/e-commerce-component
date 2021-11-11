@@ -60,11 +60,71 @@
 
 main{
     display: flex;
+    justify-content: center;
 }
 
 main .product{
-    width: 900px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
+    
 }
 
+main .product .image-product{
+    width: 390px;
+    height: 390px;
+    border-radius: 12px;
+}
+
+.container-info{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .container-info .price-info{
+    flex-wrap: wrap;
+}
+
+.container-info .product-info p:nth-child(1){
+    font-size: 1.4rem;
+}
+
+.container-info .product-info h1{
+    font-size: 4.5rem;
+}
+
+.container-info .product-info p:nth-child(3){
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.container-info .price-info p:nth-child(2){
+    margin-right: 241px;
+}
+
+.container-info .price-info p:nth-child(3){
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+
+main .buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .buy div{
+    width: 300px;
+    margin-right: 15px;
+}
+
+main .buy div img{
+    cursor: pointer;
+}
+
+main .buy h1{
+    font-size: 1.8rem;
+}
