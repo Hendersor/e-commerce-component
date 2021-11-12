@@ -18,6 +18,11 @@ html{
     min-width: 375px;
 }
 
+body .divider{
+    display: none;
+}
+
+
 .nav-bar1{
     width: 200px;
     height: 100%;
@@ -43,10 +48,10 @@ html{
 }
 
 .nav-bar2{
-    width: 100px;
+    width: 80px;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center; 
 }
 
@@ -98,17 +103,21 @@ main .product figure{
     position: absolute;
 }
 
+main .product-images{
+    display: none;
+}
+
 main .product .image-product{
     object-fit: cover;
 }
 
 main .product figure:nth-child(2){
-    right: 90%;
+    right: 88%;
 }
 
 main .product figure:nth-child(3){
     padding-right: 2px;
-    left: 90%;
+    left: 88%;
     margin-right: 10px;
 }
 

@@ -7,7 +7,19 @@
     height: 100px;
     display: flex;
     justify-content: space-between;
-    
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+body .divider{
+    width: 86vw;
+    border-bottom: 1px solid hsl(219deg 1% 88%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 20px;
 }
 
 .nav-bar .nav-bar1 .menu-icon{
@@ -17,6 +29,8 @@
 
 .nav-bar .nav-bar1{
    width: 650px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .nav-bar .nav-bar1 .list-container{
@@ -47,7 +61,9 @@
 }
 
 .nav-bar2{
-    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
     height: 100%;
 }
 
@@ -123,12 +139,12 @@ main .container-info .price-info{
 }
 
 .container-info .price-info p:nth-child(2){
-    margin-right: 241px;
+    margin-right: 245px;
 }
 
 .container-info .price-info p:nth-child(3){
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 
