@@ -16,6 +16,7 @@ html{
     display: flex;
     justify-content: space-between;
     min-width: 375px;
+
 }
 
 body .divider{
@@ -42,6 +43,40 @@ body .divider{
     display: none;
 }
 
+
+.mobileMenu{
+    position: absolute;
+    height: 110vh;
+    width: 60%;
+    background-color: white;
+    font-weight: 700;
+}
+
+.crossContainer{
+    height: 50px;
+    padding: 0 0 0 40px;
+    margin-top: 20px;
+}
+
+.crossContainer img{
+    width: 15px;
+}
+
+.listContainer{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 40px;
+}
+
+.listContainer a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
 .nav-bar2 .brand-logo{
     width: 120px;
     height: 17px;
@@ -53,6 +88,7 @@ body .divider{
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    margin-right: 10px;
 }
 
 .nav-bar2 .cart-icon{
@@ -77,9 +113,7 @@ main .product{
     background-size: cover; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    
+    align-items: center;    
 }
 
 main .product img{
@@ -216,6 +250,10 @@ main .buy div{
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 15px;
+}
+
+main .buy div h1{
+    font-size: 2.0rem;
 }
 
 main .buy div img{
