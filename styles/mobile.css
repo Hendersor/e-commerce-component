@@ -50,6 +50,17 @@ body .divider{
     width: 60%;
     background-color: white;
     font-weight: 700;
+    
+}
+
+.onMenu{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.offMenu{
+    visibility: hidden;
 }
 
 .crossContainer{
