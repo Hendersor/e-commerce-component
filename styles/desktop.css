@@ -12,6 +12,10 @@
 
 }
 
+.mobileMenu{
+    display: none;
+}
+
 body .divider{
     width: 86vw;
     border-bottom: 1px solid hsl(219deg 1% 88%);
@@ -93,14 +97,14 @@ main .product figure{
 }
 
 main .product .image-product{
-    width: 100%;
+    width: 90%;
     height: 390px;
     border-radius: 12px;
 
 }
 
 main .product .product-images{
-    width: 100%;
+    width: 90%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -165,3 +169,77 @@ main .buy div img{
 main .buy h1{
     font-size: 1.8rem;
 }
+
+
+@media screen and (min-width: 1440px) {
+    main .product{
+        width: 500px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 70px;
+    }
+    
+    main .product figure{
+        display: none;
+    }
+    
+    main .product .image-product{
+        width: 100%;
+        height: 390px;
+        border-radius: 12px;
+    
+    }
+    
+    main .product .product-images{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    main .product .product-images img{
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+    }
+}
+
+
+
+/*
+1440px
+main .product{
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 70px;
+}
+
+main .product figure{
+    display: none;
+}
+
+main .product .image-product{
+    width: 100%;
+    height: 390px;
+    border-radius: 12px;
+
+}
+
+main .product .product-images{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .product .product-images img{
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+}
+*/
