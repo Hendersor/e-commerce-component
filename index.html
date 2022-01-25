@@ -66,12 +66,13 @@
             <section id ="cartContainer" class="noneCart">
                 <h1>Cart</h1>
 
-                <section class= "finalProduct">
+                <section id='productCartContainer' class= "finalProduct noneProduct">
                     <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg" alt="imageProduct">
-                    <p>Autumn Limited Edition <br> $125.00 <span>x 3</span> <span id="total">$375.00</span></p>
+                    <p id="nameProduct"> <br>  <span id="amountProduct"> </span> <span id="total"></span></p>
                     <img class="deleteIcon" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576701/ecommerce-product-page-main/images/icon-delete_byplhc.svg" alt="delete">
                 </section>
-                <button>Checkout</button>                    
+
+                <button class="noneProduct">Checkout</button>                    
             </section>
             <img class="image-product" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg" alt="product-image">
             <section class="product-images">
@@ -103,12 +104,12 @@
             </section>
     
             <section class="buy">
-                <div>
-                    <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576704/ecommerce-product-page-main/images/icon-minus_hhr7lh.svg" alt="add-icon">
-                    <h1>0</h1>
-                    <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576704/ecommerce-product-page-main/images/icon-plus_hcjdi3.svg" alt="add-icon">
+                <div class="addRemove">
+                    <img class="minus" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576704/ecommerce-product-page-main/images/icon-minus_hhr7lh.svg" alt="add-icon">
+                    <h1 id="many">0</h1>
+                    <img class="plus" src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576704/ecommerce-product-page-main/images/icon-plus_hcjdi3.svg" alt="add-icon">
                 </div>
-                <button>
+                <button id="addCart">
                     <img src="https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576701/ecommerce-product-page-main/images/icon-cart_fzhson.svg" alt="cart-icon">
                     Add to cart
                 </button>
