@@ -50,17 +50,56 @@ body .divider{
     width: 60%;
     background-color: white;
     font-weight: 700;
-    
+    left: -100px;
 }
 
 .onMenu{
     visibility: visible;
     display: flex;
     flex-direction: column;
+    animation: enter;
+    animation-duration: 200ms;
+    transform: translate(100px, 0);
+    transition: transform 300ms;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+@keyframes enter {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .offMenu{
     visibility: hidden;
+    animation: exit;
+    animation-duration: 600ms;
+    transform: translate(-100px, 0);
+    transition: transform 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exit {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 .crossContainer{
@@ -102,6 +141,34 @@ body .divider{
     margin-right: 10px;
 }
 
+.cartContainer{
+    position: absolute;
+    height: 150px;
+    width: 280px;
+    bottom: -300%;
+    left: -320%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.cartContainer .buttonCheckout{
+    width: 80%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 9px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
 .nav-bar2 .cart-icon{
     width: 20px;
     height: 20px;
@@ -118,19 +185,104 @@ main .product{
     width: 100%;
     min-width: 375px;
     height: 250px;
-/*     background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg");
+/*  background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1636576703/ecommerce-product-page-main/images/image-product-1_wf8mwa.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;  
+
+    position: relative;  
+}
+#cartContainer{
+    position: absolute;
+    border: 1px solid;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#cartContainer h1{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.finalProduct{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#cartContainer .finalProduct img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.finalProduct p{
+    font-size: 1.5rem;
+    color: hsl(220, 14%, 75%);
+    font-weight: 400;
+}
+
+.finalProduct p span:nth-child(3){
+    font-weight: bold;
+    color: black;
+}
+
+.finalProduct span{
+    margin: 0 3px 0 3px;
+}
+
+#cartContainer .finalProduct .deleteIcon{
+    width: 15px;
+    height: 17px;
+    margin-left: 90px;
+}
+
+.finalProduct p{
+    margin-left: 15px;
+}
+
+#cartContainer button{
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 9px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.noneCart{
+    display: none;
+}
+
+.displayCart{
+    display: flex;
+    flex-direction: column;
 }
 
 main .product img{
     width: 100%;
     height: 100%;
-
 }
 
 main .product figure{
