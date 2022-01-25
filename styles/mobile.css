@@ -139,6 +139,36 @@ body .divider{
     justify-content: space-between;
     align-items: center; 
     margin-right: 10px;
+    position: relative;
+}
+
+.nav-bar2 .checkoutAmount{
+    position: relative;
+}
+
+.nav-bar2 .checkoutAmount{
+    color: white;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+} 
+
+.nav-bar2 .checkoutAmount .checkAmountContainer{
+    height: 13px;
+    width: 20px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 15px; 
+    position: absolute;
+    top: -25%;
+    left: 40%;
+}
+
+.amountOff{
+    visibility: hidden;
+}
+
+.amountOn{
+    visibility: visible;
 }
 
 .cartContainer{
