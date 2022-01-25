@@ -272,7 +272,7 @@ main .product{
 }
 
 .noneCart{
-    display: none;
+    visibility: hidden;
 }
 
 .displayCart{
