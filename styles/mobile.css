@@ -240,10 +240,6 @@ main .product{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* color: hsl(220, 14%, 75%);
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: bold; */
 }
 
 #cartContainer h1{
@@ -256,10 +252,33 @@ main .product{
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    border: 1px solid;
 }
 
+#cartContainerProduct{
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+}
+
+#buttonContainer{
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+}
+
+.noDisplayContainer{
+    display: none;
+}
+
+.yesDisplayContainer{
+    display: flex;
+}
+
+
 .noneProduct{
-    visibility: hidden;
+    visibility:hidden;
 }
 
 .product{
